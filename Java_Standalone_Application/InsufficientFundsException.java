@@ -1,8 +1,5 @@
 package bankaccountapplication;
-
-import javax.naming.InsufficientResourcesException;
-
-public class InsufficientFundsException extends InsufficientResourcesException {
+public class InsufficientFundsException extends Exception{
 
 	public InsufficientFundsException() {
         super("Insufficient funds: minimum balance requirement not met");
